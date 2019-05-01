@@ -42,19 +42,23 @@ namespace AspNetRunBasic.Repositories
 
         
 
-        public Task<Product> AddAsync(Product product)
+        public async Task<Product> AddAsync(Product product)
         {
-            throw new NotImplementedException();
+            _dbContext.Products.Add(product);
+            await _dbContext.SaveChangesAsync();
+            return product;            
         }
 
-        public Task UpdateAsync(Product product)
+        public async Task UpdateAsync(Product product)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(product).State = EntityState.Modified;
+            await _dbContext.SaveChangesAsync();
         }
 
-        public Task DeleteAsync(Product product)
+        public async Task DeleteAsync(Product product)
         {
-            throw new NotImplementedException();
+            _dbContext.Products.Remove(product);
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

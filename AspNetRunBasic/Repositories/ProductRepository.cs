@@ -37,16 +37,16 @@ namespace AspNetRunBasic.Repositories
 
         public async Task<IEnumerable<Product>> GetProductByCategoryAsync(int categoryId)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Products
+                .Where(x => x.CategoryId == categoryId)
+                .ToListAsync();
         }
-
-        
 
         public async Task<Product> AddAsync(Product product)
         {
             _dbContext.Products.Add(product);
             await _dbContext.SaveChangesAsync();
-            return product;            
+            return product;
         }
 
         public async Task UpdateAsync(Product product)

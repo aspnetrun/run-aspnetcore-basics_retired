@@ -11,6 +11,12 @@ namespace AspNetRunBasic.Entities
 
         [Required, StringLength(255)]
         public string Description { get; set; }
+
+        public int UnitPrice { get; set; }
+
         public ProductStatus Status { get; set; }
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }

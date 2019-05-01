@@ -22,15 +22,39 @@ namespace AspNetRunBasic.Repositories
             return await _dbContext.Products.ToListAsync();
         }
 
+        public async Task<Product> GetProductByIdAsync(int id)
+        {
+            return await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+        }
+
         public async Task<IEnumerable<Product>> GetProductByNameAsync(string name)
         {
-            return await _dbContext.Products.Where(p => p.Name.Contains(name)).ToListAsync();            
+            return await _dbContext.Products
+                    .Where(p => p.Name.Contains(name))
+                    .OrderBy(p => p.Name)
+                    .ToListAsync();
         }
 
         public async Task<IEnumerable<Product>> GetProductByCategoryAsync(int categoryId)
         {
-            throw new NotImplementedException();            
+            throw new NotImplementedException();
         }
-            
+
+        
+
+        public Task<Product> AddAsync(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task UpdateAsync(Product product)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteAsync(Product product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

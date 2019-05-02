@@ -30,7 +30,8 @@ namespace AspNetRunBasic.Repositories
         public async Task<IEnumerable<Product>> GetProductByNameAsync(string name)
         {
             return await _dbContext.Products
-                    .Where(p => p.Name.Contains(name))
+                    .Include(p => p.Category)
+                    .Where(p => p.Name.Contains(name) || string.IsNullOrEmpty(name))
                     .OrderBy(p => p.Name)
                     .ToListAsync();
         }

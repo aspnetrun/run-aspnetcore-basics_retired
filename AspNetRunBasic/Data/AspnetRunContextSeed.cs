@@ -48,8 +48,8 @@ namespace AspNetRunBasic.Data
         {
             return new List<Category>()
             {
-                new Category() { Id = 1, Name = "Phone", Description = "Smart Phones" },
-                new Category() { Id = 2, Name = "TV", Description = "Television" }
+                new Category() { Name = "Phone", Description = "Smart Phones" },
+                new Category() { Name = "TV", Description = "Television" }
             };
         }
 

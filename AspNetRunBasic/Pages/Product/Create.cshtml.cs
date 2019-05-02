@@ -21,7 +21,7 @@ namespace AspNetRunBasic.Pages.Product
         public async Task<IActionResult> OnGetAsync()
         {
             var categories = await _productRepository.GetCategories();
-            ViewData["CategoryId"] = new SelectList(categories, "Id", "CategoryName");
+            ViewData["CategoryId"] = new SelectList(categories, "Id", "Name");
             return Page();
         }
 

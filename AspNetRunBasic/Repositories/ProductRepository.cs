@@ -24,7 +24,9 @@ namespace AspNetRunBasic.Repositories
 
         public async Task<Product> GetProductByIdAsync(int id)
         {
-            return await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
+            return await _dbContext.Products
+                .Include(p => p.Category)
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task<IEnumerable<Product>> GetProductByNameAsync(string name)

@@ -36,7 +36,7 @@ namespace AspNetRunBasic.Pages.Product
                 return NotFound();
             }
 
-            ViewData["CategoryId"] = new SelectList(await _productRepository.GetCategories(), "Id", "CategoryName");
+            ViewData["CategoryId"] = new SelectList(await _productRepository.GetCategories(), "Id", "Name");
             return Page();
         }
 

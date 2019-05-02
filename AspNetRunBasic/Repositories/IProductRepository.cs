@@ -13,5 +13,6 @@ namespace AspNetRunBasic.Repositories
         Task<Product> AddAsync(Product product);
         Task UpdateAsync(Product product);
         Task DeleteAsync(Product product);
+        Task<IEnumerable<Category>> GetCategories();
     }
 }

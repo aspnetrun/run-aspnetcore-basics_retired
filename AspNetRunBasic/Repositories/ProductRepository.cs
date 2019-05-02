@@ -61,5 +61,10 @@ namespace AspNetRunBasic.Repositories
             _dbContext.Products.Remove(product);
             await _dbContext.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<Category>> GetCategories()
+        {
+            return await _dbContext.Categories.ToListAsync();           
+        }
     }
 }

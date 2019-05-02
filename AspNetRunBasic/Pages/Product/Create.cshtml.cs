@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AspNetRunBasic.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace AspNetRunBasic.Pages.Product
 {
@@ -22,6 +23,20 @@ namespace AspNetRunBasic.Pages.Product
             var categories = await _productRepository.GetCategories();
             ViewData["CategoryId"] = new SelectList(categories, "Id", "CategoryName");
             return Page();
+        }
+
+        [BindProperty]
+        public Entities.Product Product { get; set; }
+
+        public async Task<IActionResult> OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            Product = await _productRepository.AddAsync(Product);
+            return RedirectToPage("./Index");
         }
     }
 }

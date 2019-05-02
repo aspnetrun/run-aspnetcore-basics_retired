@@ -9,9 +9,14 @@ namespace AspNetRunBasic.Pages
 {
     public class IndexModel : PageModel
     {
-        public void OnGet()
+        public IndexModel()
         {
 
+        }
+
+        public async Task<IActionResult> OnGet()
+        {
+            return Page();
         }
     }
 }

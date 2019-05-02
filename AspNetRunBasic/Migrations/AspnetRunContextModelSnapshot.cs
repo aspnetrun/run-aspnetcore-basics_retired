@@ -51,8 +51,6 @@ namespace AspNetRunBasic.Migrations
                         .IsRequired()
                         .HasMaxLength(80);
 
-                    b.Property<int>("Status");
-
                     b.Property<int>("UnitPrice");
 
                     b.HasKey("Id");

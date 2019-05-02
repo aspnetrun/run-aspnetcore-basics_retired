@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AspNetRunBasic.Migrations
 {
     [DbContext(typeof(AspnetRunContext))]
-    [Migration("20190501190606_Initial")]
+    [Migration("20190502061258_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,8 +52,6 @@ namespace AspNetRunBasic.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(80);
-
-                    b.Property<int>("Status");
 
                     b.Property<int>("UnitPrice");
 

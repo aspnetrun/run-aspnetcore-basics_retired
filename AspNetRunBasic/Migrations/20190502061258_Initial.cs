@@ -30,7 +30,6 @@ namespace AspNetRunBasic.Migrations
                     Name = table.Column<string>(maxLength: 80, nullable: false),
                     Description = table.Column<string>(maxLength: 255, nullable: false),
                     UnitPrice = table.Column<int>(nullable: false),
-                    Status = table.Column<int>(nullable: false),
                     CategoryId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

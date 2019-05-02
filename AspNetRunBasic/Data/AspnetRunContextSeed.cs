@@ -19,6 +19,12 @@ namespace AspNetRunBasic.Data
                 // aspnetrunContext.Database.Migrate();
                 // aspnetrunContext.Database.EnsureCreated();
 
+                if (!aspnetrunContext.Categories.Any())
+                {
+                    aspnetrunContext.Categories.AddRange(GetPreconfiguredCategories());
+                    await aspnetrunContext.SaveChangesAsync();
+                }
+
                 if (!aspnetrunContext.Products.Any())
                 {
                     aspnetrunContext.Products.AddRange(GetPreconfiguredProducts());
@@ -38,13 +44,22 @@ namespace AspNetRunBasic.Data
             }
         }
 
+        private static IEnumerable<Category> GetPreconfiguredCategories()
+        {
+            return new List<Category>()
+            {
+                new Category() { Id = 1, Name = "Phone", Description = "Smart Phones" },
+                new Category() { Id = 2, Name = "TV", Description = "Television" }
+            };
+        }
+
         private static IEnumerable<Product> GetPreconfiguredProducts()
         {
             return new List<Product>()
             {
-                new Product() { Name = "IPhone X", Description = "IPhone X Well Done", Status = ProductStatus.InStock },                
-                new Product() { Name = "Samsung 10", Description = "Samsung X Well Done", Status = ProductStatus.InStock },                
-                new Product() { Name = "Huawei Plus", Description = "Huawei X Well Done", Status = ProductStatus.InStock }
+                new Product() { Name = "IPhone X", Description = "IPhone X Well Done", CategoryId = 1 },
+                new Product() { Name = "Samsung 10", Description = "Samsung X Well Done", CategoryId = 1 },
+                new Product() { Name = "Huawei Plus", Description = "Huawei X Well Done", CategoryId = 2 }
             };
         }
     }

@@ -59,6 +59,7 @@ namespace AspNetRunBasic.Data
             {
                 new Product() { Name = "IPhone X", Description = "IPhone X Well Done", CategoryId = 1 },
                 new Product() { Name = "Samsung 10", Description = "Samsung X Well Done", CategoryId = 1 },
+                new Product() { Name = "LG 5", Description = "LG 5 Well Done", CategoryId = 1 },
                 new Product() { Name = "Huawei Plus", Description = "Huawei X Well Done", CategoryId = 2 }
             };
         }

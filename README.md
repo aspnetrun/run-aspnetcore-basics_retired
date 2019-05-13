@@ -66,15 +66,13 @@ If you wish to use the project with a persistent database, you will need to run 
 ```csharp
 public void ConfigureDatabases(IServiceCollection services)
 {
-    // use in-memory database
-    services.AddDbContext<AspnetRunContext>(c =>
-        c.UseInMemoryDatabase("AspnetRunConnection")
-        .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+            //// use in-memory database
+            //services.AddDbContext<AspnetRunContext>(c =>
+            //    c.UseInMemoryDatabase("AspnetRunConnection"));
 
-    //// use real database
-    //services.AddDbContext<AspnetRunContext>(c =>
-    //    c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection"))
-    //    .UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+            // add real database dependecy
+            services.AddDbContext<AspnetRunContext>(c =>
+                c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection")));  
 }
 ```
 
@@ -84,7 +82,7 @@ public void ConfigureDatabases(IServiceCollection services)
 
 ```csharp
 dotnet restore
-dotnet ef database update -c AspnetRunContext -p ../AspnetRun.Infrastructure/AspnetRun.Infrastructure.csproj -s AspnetRun.Web.csproj
+dotnet ef database update -c AspnetRunContext
 ```
 Or you can direct call ef commands from Visual Studio **Package Manager Console**. Open Package Manager Console, set default project to AspnetRun.Infrastructure and run below command;
 ```csharp
@@ -96,7 +94,7 @@ The first time you run the application, it will seed aspnetrun sql server databa
 
 If you modify-change or add new some of entities to Core project, you should run ef migrate commands in order to update your database as the same way but below commands;
 ```csharp
-add migration YourCustomEntityChanges
+add-migration YourCustomEntityChanges
 update-database
 ```
 

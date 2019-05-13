@@ -214,6 +214,7 @@ The application's main **starting point** is the ASP.NET Core web project. This 
 * Middlewares
 * Logging
 * Configuration
+* Dependency Injection
 
 ***Most of these features implemented on real-world repository of this repos.Check for real-world examples.
 

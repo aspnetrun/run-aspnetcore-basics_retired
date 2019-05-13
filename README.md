@@ -115,6 +115,9 @@ Repository include folders for group implementations;
 * Repositories
     * IProductRepository
     * ProductRepository
+* wwwroot
+* Startup.cs
+* Program.cs
     
 ### Data Folder
 Includes **Entity Framework Core Context** and tables in this folder. When new entity created, it should add to context and configure in context.
@@ -213,6 +216,18 @@ The application's main **starting point** is the ASP.NET Core web project. This 
 * Configuration
 
 ***Most of these features implemented on real-world repository of this repos.Check for real-world examples.
+
+### wwwroot Folder
+The wwwroot folder in the ASP.NET Core project is treated as a web root folder. Static files can be stored in any folder under the web root and accessed with a relative path to that root.
+
+In the standard ASP.NET application, static files can be served from the root folder of an application or any other folder under it. This has been changed in ASP.NET Core. Now, only those files that are in the web root - wwwroot folder can be served over an http request. All other files are blocked and cannot be served by default.
+
+### Program.cs
+ASP.NET Core web application is actually a console project which starts executing from the entry point public static void Main() in Program class where we can create a host for the web application.
+
+### Startup.cs
+ASP.NET Core application must include Startup class. It is like Global.asax in the traditional .NET application. As the name suggests, it is executed first when the application starts.
+
 
 ## Technologies
 * .NET Core 2.2

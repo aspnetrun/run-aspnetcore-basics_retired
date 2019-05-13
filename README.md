@@ -98,13 +98,6 @@ add-migration YourCustomEntityChanges
 update-database
 ```
 
-## Layered Architecture
-AspnetRun implements NLayer **Hexagonal architecture** (Core, Application, Infrastructure and Presentation Layers) and **Domain Driven Design** (Entities, Repositories, Domain/Application Services, DTO's...). Also implements and provides a good infrastructure to implement **best practices** such as Dependency Injection, logging, validation, exception handling, localization and so on.
-Aimed to be a **Clean Architecture** also called **Onion Architecture**, with applying **SOLID principles** in order to use for a project template. Also implements and provides a good infrastructure to implement **best practices** like **loosely-coupled, dependency-inverted** architecture
-The below image represents aspnetrun approach of development architecture of run repository series;
-
-![DDD_png_pure](https://user-images.githubusercontent.com/1147445/54773098-e1efe700-4c19-11e9-9150-74f7e770de42.png)
-
 ### Structure of Project
 AspnetRunBasic has only **one solution** and into this solution only **one web application project** which include all components of project structure. The idea is that **fast implementation, minimum development, bootstrap your idea, create Minimum Viable Product (MVP), idea validation, startup development implementation** for a **limited time** and **limited resources** with using asp.net core and entity framework core. 
 
@@ -132,7 +125,7 @@ EF add-migration classes.
 #### Repository
 EF Repository implementation. This class responsible to create queries, includes, where conditions etc..
 
-#### Entities Folder
+### Entities Folder
 Includes Entity Framework Core Entities which creates sql table with **Entity Framework Core Code First Aproach**. Some Aggregate folders holds entity and aggregates.
 You can see example of **code-first** Entity definition as below;
 

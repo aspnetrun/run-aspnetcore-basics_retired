@@ -25,7 +25,7 @@ Here is CRUD operations of aspnetrun-core-basic template project;
 
 ![Recordit GIF](http://g.recordit.co/LJCyYfQEpX.gif)
 
-**run-aspnetcore-basic** is a general purpose to implement the **Default Web Application template of .Net** with **one solution one project for fastest idea implementations** to building modern web applications with latest ASP.NET Core & Web API & EF Core technologies. 
+AspnetRunBasic has only **one solution** and into this solution only **one web application project** which include all components of project structure. The idea is that **fast implementation, minimum development, bootstrap your idea, create Minimum Viable Product (MVP), idea validation, startup development implementation** for a **limited time** and **limited resources** with using latest asp.net core and entity framework core. 
 
 ## Give a Star! :star:
 If you liked the project or if AspnetRun helped you, please **give a star**. And also please **fork** this repository and send us **pull-requests**. If you find any problem please open **issue**.
@@ -99,7 +99,7 @@ update-database
 ```
 
 ### Structure of Project
-AspnetRunBasic has only **one solution** and into this solution only **one web application project** which include all components of project structure. The idea is that **fast implementation, minimum development, bootstrap your idea, create Minimum Viable Product (MVP), idea validation, startup development implementation** for a **limited time** and **limited resources** with using asp.net core and entity framework core. 
+**run-aspnetcore-basic** is a general purpose to implement the **Default Web Application template of .Net** with **one solution one project for fastest idea implementations** to building modern web applications with latest ASP.NET Core & EF Core technologies. 
 
 Repository include folders for group implementations;
 * Data
@@ -194,6 +194,25 @@ Also implementation located same places in order to choose different implementat
 Development of UI Logic with implementation. Interfaces drives business requirements and implementations in this layer.
 The application's main **starting point** is the ASP.NET Core web project. This is a classical console application, with a public static void Main method in Program.cs. It currently uses the default **ASP.NET Core project template** which based on **Razor Pages** templates. This includes appsettings.json file plus environment variables in order to stored configuration parameters, and is configured in Startup.cs.
 
+#### Used Components
+* Asp.Net Core
+* Entity Framework Core
+* Razor Pages
+    * Scaffolding Razor
+    * Tag Helpers
+    * Bindings
+    * Model Validations
+    * Navigation - Page Routes
+    * User Interfaces
+    * Partial Views
+    * View Components
+    * Razor Sections
+    * Dynamic Layout
+* Middlewares
+* Logging
+* Configuration
+
+***Most of these features implemented on real-world repository of this repos.Check for real-world examples.
 
 ## Technologies
 * .NET Core 2.2
@@ -203,10 +222,10 @@ The application's main **starting point** is the ASP.NET Core web project. This 
 * Razor Pages
 * AutoMapper
 
-## Used Components
+## Main Objects
 * Asp.Net Core
 * Entity Framework Core
-* Razor Pages
+* Razor Pages   
 * Repository Design Pattern
 * Multiple Page Web Application (MPA)
 * Monolitic Deployment Architecture

@@ -1,34 +1,29 @@
-# run-aspnetcore-basic
-One Solution - One Project for fastest idea generation with Asp.Net Core
-
-
-This repo has only 1 solution and one project for Razor Pages.
-But asp.net core will be also create spa so this repo also add a new 1 project for spa web application and these projects are indepent from each other, one would be for mpa and one for spa.
-
-
 # What is AspnetRun ? 
 A **starter kit** for your next **ASP.NET Core** web application. Boilerplate for **ASP.NET Core reference application** with **Entity Framework Core**, demonstrating a layered application architecture with DDD best practices. Implements NLayer **Hexagonal architecture** (Core, Application, Infrastructure and Presentation Layers) and **Domain Driven Design** (Entities, Repositories, Domain/Application Services, DTO's...) 
 and aimed to be a **Clean Architecture**, with applying **SOLID principles** in order to use for a project template. 
 Also implements **best practices** like **loosely-coupled, dependency-inverted** architecture and using **design patterns** such as **Dependency Injection**, logging, validation, exception handling, localization and so on.
 
-You can check full repository documentations and step by step development of **[100+ page eBook PDF](http://www.aspnetrun.com/Book)** from here - **http://www.aspnetrun.com/Book**. Also detail introduction of book and project structure exists on **[50+ page of github wiki](https://github.com/aspnetrun/run-core/wiki)**. 
+You can check full repository documentations and step by step development of **[100+ page eBook PDF](http://www.aspnetrun.com/Book)** from here - **http://www.aspnetrun.com/Book**. Also detail introduction of book and project structure exists on **[50+ page of github wiki](https://github.com/aspnetrun/run-core/wiki)**. You can follow **aspnetrun repositories** for building **step by step** asp.net core **web development skills**.
 
 # AspnetRun Repositories
-Here you can find all of the **aspnetrun repositories from easy to difficult**;
-* **[run-aspnetcore-basic](https://github.com/aspnetrun/run-aspnetcore)** - intented to building traditional Multi-Page Web Applications(MPA) using ASP.NET Core & EF.Core and **Razor Pages** templates with default aspnet core server-side rendering approach. **YOU ARE HERE.**
-* **[run-aspnetcore](https://github.com/aspnetrun/run-aspnetcore)** - intented to building traditional Multi-Page Web Applications(MPA) using ASP.NET Core & EF.Core and **Razor Pages** templates with default aspnet core server-side rendering approach. **YOU ARE HERE.**
+Here you can find all of the **aspnetrun repositories from easy to difficult**, Also this list can be track a **learning path** of asp.net core respectively;
+* **[run-aspnetcore-basic](https://github.com/aspnetrun/run-aspnetcore-basic)** - intented to building Multi-Page Web Applications(MPA) using ASP.NET Core Default Web Application template with EF.Core. This solution **only one solution one project** fastest **idea generation** with Asp.Net Core. **YOU ARE HERE.**
+* **[run-aspnetcore](https://github.com/aspnetrun/run-aspnetcore)** - intented to building traditional Multi-Page Web Applications(MPA) using ASP.NET Core & EF.Core and **Razor Pages** templates with default aspnet core server-side rendering approach.
 * **[run-angular](https://github.com/aspnetrun/run-angular)** - intented to building Single-Page Web Applications(SPA) using ASP.NET Core & EF.Core, Web API Project and **Angular** for frontend framework.
 
-And there are 2 sample repositories which are implemented base repository and **applying real-world examples** with developing new features for example Identity, Localization etc..
-* **[run-aspnetcore-realworld](https://github.com/aspnetrun/run-aspnetcore-realworld)** - implemented this repository and build **sample of eCommerce reference application** on Multi-Page Web Applications(MPA) using ASP.NET Core Razor Pages templates.
+And there are crucial repositories which are **implemented base repository** and **applying real-world examples** with developing new enterprice features for example Identity, Paging, Localization etc..
+* **[run-aspnetcore-basic-realworld](https://github.com/aspnetrun/run-aspnetcore-basic-realworld)** - implemented this repository and build **sample of eCommerce reference application** on Multi-Page Web Applications(MPA) using ASP.NET Core in a **one solution one project for fastest idea implementations**.
+* **[run-aspnetcore-realworld](https://github.com/aspnetrun/run-aspnetcore-realworld)** - implemented run-aspnetcore repository and build **sample of eCommerce reference application** on Multi-Page Web Applications(MPA) using ASP.NET Core Razor Pages templates.
 * **[run-angular-realworld](https://github.com/aspnetrun/run-angular-realworld)** - implemented run-angular repository and build **sample of eCommerce reference application** on Single Page Web Application(SPA) architecture using **ASP.NET Core + Angular**.
 
-# run-aspnetcore
-Here is CRUD operations of aspnetrun-core template project;
+# run-aspnetcore-basic
+Here is CRUD operations of aspnetrun-core-basic template project;
 
 ![Recordit GIF](http://g.recordit.co/LJCyYfQEpX.gif)
 
-**run-aspnetcore** is a general purpose to implement the **Default Web Application template of .Net** with **layered architecture** for building modern web applications with latest ASP.NET Core & Web API & EF Core technologies. These repositories is **updated regularly**. So one of the new approach of Microsoft is SPA with only Asp.Net Core framework without any frontend framework. This is **[Blazor](https://blazor.net/)** and it will be avaible soon, so we have another repository for implementing **Single Page Web Applcation over the Web Assembly** with using **Blazor** as below;
+**run-aspnetcore-basic** is a general purpose to implement the **Default Web Application template of .Net** with **one solution one project for fastest idea implementations** 
+
+for building modern web applications with latest ASP.NET Core & Web API & EF Core technologies. These repositories is **updated regularly**. So one of the new approach of Microsoft is SPA with only Asp.Net Core framework without any frontend framework. This is **[Blazor](https://blazor.net/)** and it will be avaible soon, so we have another repository for implementing **Single Page Web Applcation over the Web Assembly** with using **Blazor** as below;
 * **[run-aspnetcore-spa](https://github.com/aspnetrun/run-aspnetcore-spa)** - intented to building Single-Page Web Applications(SPA) using only ASP.NET Core **without any frontend framework**.This comes with **Blazor** framework from Microsoft which basically using **Razor Components** templates.
 
 We are following Microsoft Web Technologies very closely so we will update all these repositories accordingly with **Microsoft Web Application stacks**.

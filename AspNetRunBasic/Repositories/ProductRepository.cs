@@ -33,7 +33,7 @@ namespace AspNetRunBasic.Repositories
         {
             return await _dbContext.Products
                     .Include(p => p.Category)
-                    .Where(p => p.Name.Contains(name) || string.IsNullOrEmpty(name))
+                    .Where(p => string.IsNullOrEmpty(name) || p.Name.ToLower().Contains(name.ToLower()))
                     .OrderBy(p => p.Name)
                     .ToListAsync();
         }

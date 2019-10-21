@@ -40,7 +40,7 @@ namespace AspNetRunBasic.Data
                     log.LogError(exception.Message);
                     await SeedAsync(aspnetrunContext, loggerFactory, retryForAvailability);
                 }
-                throw new Exception();
+                throw;
             }
         }
 

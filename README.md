@@ -22,7 +22,7 @@ Here is CRUD operations of aspnetrun-core-basic template project;
 
 ![Recordit GIF](http://g.recordit.co/LJCyYfQEpX.gif)
 
-AspnetRunBasic has only **one solution** and into this solution only **one web application project** which include all components of project structure. The idea is that **fast implementation, minimum development, bootstrap your idea, create Minimum Viable Product (MVP), idea validation, startup development implementation** for a **limited time** and **limited resources** with using latest asp.net core and entity framework core. 
+AspnetRunBasic has only **one solution** and into this solution only **one web application project** with Asp.Net Core & EF.Core which used aspnetcore components; **razor pages, middlewares, dependency injection, configuration, logging**. To create websites with minimum implementation of asp.net core based on **HTML5, CSS, and JavaScript**. You can use this boilerplate for **fast implementation, minimum development, bootstrap your idea, create Minimum Viable Product (MVP), idea validation, startup development** implementation for a limited time and limited resources with using latest asp.net core and entity framework core.
 
 ## Give a Star! :star:
 If you liked the project or if AspnetRun helped you, please **give a star**. And also please **fork** this repository and send us **pull-requests**. If you find any problem please open **issue**.

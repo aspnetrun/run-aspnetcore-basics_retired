@@ -21,24 +21,30 @@ namespace AspNetRunBasic
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //// use in-memory database
-            //services.AddDbContext<AspnetRunContext>(c =>
-            //    c.UseInMemoryDatabase("AspnetRunConnection"));
+            #region Database Connection
 
-            // add real database dependecy
+            // use in-memory database
             services.AddDbContext<AspnetRunContext>(c =>
-                c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection")));            
+                c.UseInMemoryDatabase("AspnetRunConnection"));
+
+            //// add real database dependecy
+            //services.AddDbContext<AspnetRunContext>(c =>
+            //    c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection")));
+
+            #endregion
+
+            #region Dependencies
 
             // add repository dependecy
             services.AddScoped<IProductRepository, ProductRepository>();
 
+            #endregion
 
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
             });
-
 
             services.AddRazorPages()
                 .AddNewtonsoftJson();

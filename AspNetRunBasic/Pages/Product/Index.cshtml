@@ -43,17 +43,17 @@
                 <td>@product.UnitPrice</td>
                 <td>@product.Category.Name</td>
                 <td>
-                    <a class="btn"
+                    <a class="btn btn-primary"
                        asp-page="./Details"
                        asp-route-productId="@product.Id">
                         Details
                     </a>
-                    <a class="btn"
+                    <a class="btn btn-primary"
                        asp-page="./Edit"
                        asp-route-productId="@product.Id">
                         Edit
                     </a>
-                    <a class="btn"
+                    <a class="btn btn-danger"
                        asp-page="./Delete"
                        asp-route-productId="@product.Id">
                         Delete

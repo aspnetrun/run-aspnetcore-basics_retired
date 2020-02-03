@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetRunBasic_Renamed", "AspNetRunBasic\AspNetRunBasic_Renamed.csproj", "{05D36AAF-146B-46E1-9A17-663F862EDC06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetRunBasic_Retired", "AspNetRunBasic\AspNetRunBasic_Retired.csproj", "{05D36AAF-146B-46E1-9A17-663F862EDC06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

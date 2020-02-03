@@ -1,13 +1,14 @@
+# What is AspnetRun ? 
 A **starter kit** for your next **ASP.NET Core** web application. Boilerplate for **ASP.NET Core reference application** with **Entity Framework Core**, demonstrating a layered application architecture with DDD best practices. Implements NLayer **Hexagonal architecture** (Core, Application, Infrastructure and Presentation Layers) and **Domain Driven Design** (Entities, Repositories, Domain/Application Services, DTO's...) 
 and aimed to be a **Clean Architecture**, with applying **SOLID principles** in order to use for a project template. 
 Also implements **best practices** like **loosely-coupled, dependency-inverted** architecture and using **design patterns** such as **Dependency Injection**, logging, validation, exception handling, localization and so on.
 
-You can check full repository documentations and step by step development of **[100+ page eBook PDF](http://www.aspnetrun.com/Book)** from here - **http://www.aspnetrun.com/Book**. Also detail introduction of book and project structure exists on **[50+ page of github wiki](https://github.com/aspnetrun/run-core/wiki)**. You can follow **aspnetrun repositories** for building **step by step** asp.net core **web development skills**.
+You can check full repository documentations and step by step development of **[100+ page e-book PDF](https://aspnetrun.azurewebsites.net/Discover)** from here - **https://aspnetrun.azurewebsites.net/Discover**. Also detail introduction of book and project structure exists on **[medium aspnetrun page](https://medium.com/aspnetrun)**. You can follow **aspnetrun repositories** for building **step by step** asp.net core **web development skills**.
 
 # AspnetRun Repositories
 Here you can find all of the **aspnetrun repositories from easy to difficult**, Also this list can be track a **learning path** of asp.net core respectively;
-* **[run-aspnetcore-basic](https://github.com/aspnetrun/run-aspnetcore-basic)** - intended to building fastest ASP.NET Core Default Web Application template. This solution **only one solution one project** for **idea generation** with Asp.Net Core. ***YOU ARE HERE.***
-* **[run-aspnetcore](https://github.com/aspnetrun/run-aspnetcore)** - intended to building Multi-Page Web Applications(MPA) using ASP.NET Core & EF.Core in **Clean Architecture** with default aspnet core server-side rendering approach. 
+* **[run-aspnetcore-basic](https://github.com/aspnetrun/run-aspnetcore-basic)** - intended to building fastest ASP.NET Core Default Web Application template. This solution **only one solution one project** for **idea generation** with Asp.Net Core. 
+* **[run-aspnetcore](https://github.com/aspnetrun/run-aspnetcore)** - intended to building Multi-Page Web Applications(MPA) using ASP.NET Core & EF.Core in **Clean Architecture** with default aspnet core server-side rendering approach.
 * **[run-aspnetcore-angular](https://github.com/aspnetrun/run-angular)** - intended to building Single-Page Web Applications(SPA) using ASP.NET Core & EF.Core, Web API Project and **Angular** for frontend framework.
 
 And there are crucial repositories which are **implemented base repository** and **applying real-world examples** with developing new enterprice features for example Identity, Paging, Localization etc..
